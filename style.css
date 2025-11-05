@@ -269,7 +269,7 @@ body::before {
 }
 
 .coffee-card img {
-  width: 600px;
+  width: 650px;
   height: auto;
   border-radius: 10px;
   transform: rotate(-2deg);
