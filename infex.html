@@ -60,7 +60,6 @@
           <p>Experience the rich aroma of freshly brewed perfection.
               Each sip blends bold flavor with creamy texture.
               Made to lift your mood, one cup at a time.</p>
-          <button class="view-btn">View All →</button>
         </div>
       </div>
 
@@ -82,7 +81,6 @@
           <p>A perfect balance of rich espresso and velvety milk foam.
              Smooth, creamy, and comforting in every sip.
              Your timeless companion for a relaxed morning.</p>
-          <button class="view-btn">View All →</button>
         </div>
         <img src="coffe menu3.jpg" alt="cappuccino">
       </div>
@@ -94,7 +92,6 @@
           <p>Chilled espresso poured over ice for a refreshing kick.
               Bold flavor meets cool satisfaction in every glass.
               Perfect to energize your summer days.</p>
-          <button class="view-btn">View All →</button>
         </div>
         <img src="coffee menu4.jpg" alt="iced coffee">
       </div>
@@ -105,7 +102,6 @@
           <p>A delicious fusion of chocolate and espresso delight.
              Sweet, smooth, and slightly indulgent.
              The ideal treat for coffee lovers with a sweet tooth.</p>
-          <button class="view-btn">View All →</button>
         </div>
         <img src="coffe menu5.jpg" alt="Coffee Mocha">
       </div>
@@ -116,35 +112,55 @@
           <p>Strong espresso mellowed with hot water for balance.
              Simple, bold, and beautifully aromatic.
             For those who love pure coffee essence, no extras.</p>
-          <button class="view-btn">View All →</button>
         </div>
         <img src="coffee menu6.jpg" alt="Americano">
       </div>
     </div>
   </section>
 
-  <script>
-    function scrollToSection(id) {
-      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-    }
+  <!-- ======= BEST SELLING ITEM SECTION ======= -->
+  <section class="best-selling">
+    <div class="container">
+      <h2 class="section-title">Best Selling Item</h2>
+      <p class="section-subtitle">
+        Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry.
+        Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s.
+      </p>
 
-    // Hamburger Menu
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    const navLinksItems = document.querySelectorAll('.nav-links li');
+      <div class="category-filter">
+        <a href="#" class="active">All</a>
+        <a href="#">Black</a>
+        <a href="#">Espresso</a>
+        <a href="#">Doppio</a>
+      </div>
 
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('active');
-      navLinks.classList.toggle('active');
-    });
+      <div class="product-list">
+        <div class="product-card">
+          <img src="b-cappuciano.jpeg" alt="Cappuccino">
+          <h3>Cappuccino</h3>
+          <button>Order Now</button>
+        </div>
 
-    // Close menu when clicking a link
-    navLinksItems.forEach(link => {
-      link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navLinks.classList.remove('active');
-      });
-    });
-  </script>
+        <div class="product-card">
+          <img src="b-americano.jpg" alt="Americano">
+          <h3>Americano</h3>
+          <button>Order Now</button>
+        </div>
+
+        <div class="product-card">
+          <img src="b-mocha.jpg" alt="Espresso">
+          <h3>Mocha</h3>
+          <button>Order Now</button>
+        </div>
+      </div>
+
+      <div class="navigation">
+        <button class="nav-btn prev">←</button>
+        <button class="nav-btn next">→</button>
+      </div>
+    </div>
+  </section>
+
+  
 </body>
 </html>
