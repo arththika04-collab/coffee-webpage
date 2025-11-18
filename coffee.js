@@ -204,9 +204,6 @@ window.addEventListener("scroll", () => {
 });
 
 
-/* ======================================================
-    9. FLOATING COFFEE BEANS (AUTO)
-====================================================== */
 function createBean() {
   const bean = document.createElement("div");
   bean.classList.add("bean");
@@ -218,3 +215,57 @@ function createBean() {
 }
 
 setInterval(createBean, 900);
+
+const reviews = [
+  {
+    img: "rev",
+    text: "I Have Tested Caffeine Coffee Many Times. Really Amazing! The combination was perfect and quality was outstanding.",
+    name: "Shalima Hayden"
+  },
+  {
+    img: "user2.jpg",
+    text: "Absolutely loved the coffee! Rich aroma and premium taste. My go-to coffee shop from now.",
+    name: "Michael Thomas"
+  },
+  {
+    img: "user3.jpg",
+    text: "The best iced coffee I've ever had. Fresh, bold, and refreshing. Highly recommended!",
+    name: "Aadhira Sen"
+  },
+  {
+    img: "user4.jpg",
+    text: "Amazing customer service. Coffee quality is consistent and very satisfying every time.",
+    name: "Arjun Prakash"
+  }
+];
+
+let index = 0;
+
+const userImg = document.getElementById("userImg");
+const reviewText = document.getElementById("reviewText");
+const userName = document.getElementById("userName");
+const testimonialBox = document.getElementById("testimonialBox");
+
+// Change review
+function updateReview() {
+  testimonialBox.style.opacity = 0;
+
+  setTimeout(() => {
+    userImg.src = reviews[index].img;
+    reviewText.textContent = reviews[index].text;
+    userName.textContent = reviews[index].name;
+    testimonialBox.style.opacity = 1;
+  }, 400);
+}
+
+// Next button
+document.getElementById("nextBtn").addEventListener("click", () => {
+  index = (index + 1) % reviews.length;
+  updateReview();
+});
+
+// Previous button
+document.getElementById("prevBtn").addEventListener("click", () => {
+  index = (index - 1 + reviews.length) % reviews.length;
+  updateReview();
+});
