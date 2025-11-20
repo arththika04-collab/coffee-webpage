@@ -771,13 +771,14 @@ body::before {
 }
 
 body {
-            margin: 0;
-            font-family: "Georgia", serif;
-            background-color: #1c120c;
-            color: white;
-        }
 
-        /* TOP SECTION */
+    margin: 0;
+    font-family: "Georgia", serif;
+    background-color: #1a120c;
+    color: white;
+    background-image: none !important;
+}
+
         .top-section {
             background-color: #d6ac8c;
             padding: 40px 60px;
