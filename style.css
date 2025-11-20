@@ -785,12 +785,14 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            
         }
 
         .top-section h1 {
             font-size: 45px;
             margin: 0;
             color: #2d1c14;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
         .top-right {
@@ -799,7 +801,7 @@ body {
 
         .top-right p {
             color: #2e1b14;
-            font-size: 14px;
+            font-size: 24px;
             margin-bottom: 15px;
         }
 
